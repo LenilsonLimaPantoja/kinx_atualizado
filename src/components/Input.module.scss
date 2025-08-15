@@ -1,0 +1,17 @@
+@import '../styles/global.scss';
+
+.input {
+    width: 100%;
+    padding: 10px 40px;
+    outline: none;
+    color: $bg-gray;
+    background-color: $bg-dark;
+    height: 63px;
+    border: solid 1px #1c1c1c;
+    border-radius: 10px;
+
+    &:focus {
+        border: solid 1px $bg-green
+    }
+
+}

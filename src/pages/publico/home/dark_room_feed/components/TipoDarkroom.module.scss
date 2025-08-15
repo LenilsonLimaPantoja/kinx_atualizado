@@ -1,0 +1,155 @@
+@import '../../../../../styles//global.scss';
+
+.area_darkroon_feed_card_topo {
+    background-image: url("../../../../../arquivos//fundo_darkroom.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px;
+    width: 100%;
+    // height: 254;
+    border-radius: 15px;
+
+    .area_darkroon_feed_card_topo_centro {
+        background: #0000006B;
+        backdrop-filter: blur(20px);
+        border-radius: 15px;
+        display: flex;
+        padding: 20px;
+        justify-content: space-between;
+        align-items: stretch;
+
+        .area_darkroon_feed_card_topo_centro_body {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            padding: 20px;
+
+            img {
+                width: 132px;
+                height: 132px;
+                border-radius: 50%;
+                border: solid 5px #CBFB45
+            }
+
+            .area_darkroon_feed_card_topo_centro_body_texto {
+                color: #fff;
+                display: flex;
+                gap: 20px;
+                flex-direction: column;
+                max-width: 591px;
+
+                strong {
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                }
+
+                p {
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+
+                }
+
+                span {
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+
+                }
+            }
+        }
+
+        .area_darkroon_feed_card_topo_centro_info_darkroom {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 10px;
+
+            .area_darkroon_feed_card_topo_centro_info_darkroom_opcao {
+                color: #fff;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+
+                svg {
+                    font-size: 15px;
+                }
+
+                .area_icone_online {
+                    position: relative;
+
+                    .icone_ponto {
+                        position: absolute;
+                        left: 5px;
+                        bottom: 0px;
+                        color: $bg-green;
+                    }
+                }
+
+                span {
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                }
+            }
+        }
+
+        .area_darkroon_feed_card_topo_centro_right {
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-end;
+
+            .area_darkroon_feed_card_topo_centro_right_topo {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                button {
+                    width: 21px;
+                    height: 21px;
+                    border-radius: 50%;
+                    border: solid 2px #fff;
+                    background-color: transparent;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+
+                    svg {
+                        color: #fff;
+                        font-size: 15px;
+                    }
+                }
+            }
+
+            .btn_acao {
+                height: 25px;
+                border-radius: 12.5px;
+                border: none;
+                padding: 0 5px 0 15px;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                background-color: $bg-green;
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                justify-content: space-between;
+                cursor: pointer;
+
+                svg {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}

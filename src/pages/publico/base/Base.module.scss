@@ -1,0 +1,15 @@
+@import '../../../styles/global.scss';
+
+.container_base {
+    background-color: $bg-dark-primary;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+
+    .area_base {
+        width: 100%;
+        // max-width: 1333px;
+        // max-width: 1184px;
+        // padding: 10px;
+    }
+}

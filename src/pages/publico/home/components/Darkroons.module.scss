@@ -1,0 +1,192 @@
+@import '../../../../styles/global.scss';
+
+.home_topicos_postagens {
+    display: flex;
+    justify-content: center;
+
+
+
+    .home_topicos_postagens_area {
+        display: flex;
+        gap: 36px;
+        max-width: 1333px;
+        padding: 36px;
+
+        @media (max-width: 1000px) {
+            flex-direction: column;
+        }
+
+        @media (max-width: 600px) {
+            padding: 36px 20px;
+        }
+
+        .home_topicos_area {
+            display: flex;
+            flex-direction: column;
+
+            .home_topicos {
+                display: flex;
+                flex-direction: column;
+                row-gap: 20px;
+
+                .home_topicos_area_titulo {
+                    h2 {
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 42px;
+                        letter-spacing: 0%;
+                        color: $bg-gray-b;
+                    }
+
+                    span {
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 22px;
+                        letter-spacing: 0%;
+                        color: $bg-gray;
+                    }
+                }
+
+                .home_topicos_area_card {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 12px;
+                    justify-content: space-between;
+
+                    .home_topicos_card {
+                        background-color: $bg-dark-secondary;
+                        display: flex;
+                        flex-grow: 1;
+                        flex-basis: 0;
+                        min-width: 215px;
+                        height: 85px;
+                        border-radius: 12px;
+                        border: solid 1px transparent;
+                        padding: 5px;
+                        align-items: center;
+                        gap: 15px;
+                        padding-left: 15px;
+                        cursor: pointer;
+                        transition: .5s ease-in-out;
+
+                        &:hover {
+                            border-color: $bg-green;
+                        }
+
+                        img {
+                            width: 33px;
+                            height: 33px;
+                            border-radius: 50%;
+                            border: solid 1.5px $bg-gray;
+
+                        }
+
+                        .home_topicos_card_body {
+                            display: flex;
+                            flex-direction: column;
+                            height: 100%;
+                            justify-content: space-around;
+                            flex-grow: 1;
+
+                            .home_topicos_card_body_area_top {
+                                display: flex;
+                                flex-direction: column;
+                                row-gap: 5px;
+
+                                .home_topicos_card_body_titulo {
+                                    font-weight: 700;
+                                    font-size: 12px;
+                                    line-height: 100%;
+                                    letter-spacing: 0%;
+                                    color: $bg-gray-b;
+                                }
+
+                                .home_topicos_card_body_subtitulo {
+                                    font-weight: 400;
+                                    font-size: 10px;
+                                    line-height: 100%;
+                                    letter-spacing: 0%;
+                                    color: $bg-gray;
+
+                                }
+                            }
+
+                            .home_topicos_card_body_area_bottom {
+                                color: $bg-gray;
+                                display: flex;
+                                align-items: center;
+                                gap: 5px;
+
+                                svg {
+                                    font-size: 12px;
+                                }
+
+                                span {
+                                    font-weight: 400;
+                                    font-size: 10px;
+                                    line-height: 100%;
+                                    letter-spacing: 0%;
+
+                                }
+                            }
+                        }
+                    }
+
+                    .home_topicos_right {
+                        height: 100%;
+                        display: flex;
+                        gap: 5px;
+                        align-items: flex-start;
+
+                        button {
+                            width: 18px;
+                            height: 18px;
+                            background-color: $bg-green;
+                            border: none;
+                            border-radius: 50%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            cursor: pointer;
+
+                            img {
+                                width: 8px;
+                                height: 8px;
+                                border: none;
+                            }
+                        }
+
+                        .home_topicos_right_btn1 {
+                            background-color: transparent;
+                            color: $bg-gray;
+
+                            img {
+                                width: 10px;
+                                height: 10px;
+                                border-radius: 0px;
+                            }
+                        }
+                    }
+                }
+
+                .home_topicos_area_bottom {
+                    display: flex;
+                    justify-content: flex-end;
+
+                    button {
+                        width: 89px;
+                        height: 28px;
+                        border-radius: 8px;
+                        background-color: $bg-green;
+                        border: none;
+                        font-weight: 700;
+                        font-size: 12px;
+                        line-height: 100%;
+                        letter-spacing: 0%;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

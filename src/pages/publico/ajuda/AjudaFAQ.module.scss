@@ -1,0 +1,199 @@
+@import '../../../styles/global.scss';
+
+.container_ajuda_faq {
+
+    .container_ajuda_faq_header {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        padding: 30px;
+        background-color: $bg-green;
+
+        .container_ajuda_faq_text {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            padding: 0px 30px;
+
+            h1 {
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 42px;
+                letter-spacing: 0%;
+                font-family: $font-bold;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                max-width: 683px;
+            }
+        }
+    }
+
+    .container_ajuda_faq_form {
+        padding: 30px 60px;
+        display: flex;
+        gap: 10px;
+
+        .container_ajuda_faq_label {
+            width: 209px;
+            display: flex;
+            align-items: center;
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+
+            select {
+                flex-grow: 1;
+                border: none;
+                padding: 0px 20px;
+                height: 52px;
+                color: #fff;
+                background-color: $bg-gray-tertiary;
+                outline: none;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                background-image: none;
+                cursor: pointer;
+            }
+
+            svg {
+                position: absolute;
+                right: 10px;
+                color: #fff;
+                font-size: 22px;
+            }
+        }
+
+        .container_ajuda_faq_input {
+            width: 532px;
+            height: 52px;
+            border-radius: 8px;
+            background-color: $bg-gray-tertiary;
+            display: flex;
+            align-items: center;
+            padding: 5px 5px 5px 20px;
+            gap: 15px;
+
+            svg {
+                color: $bg-gray;
+                font-size: 22px;
+            }
+
+            input {
+                flex-grow: 1;
+                height: 100%;
+                background-color: transparent;
+                border: none;
+                outline: none;
+                color: $bg-gray;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 100%;
+                letter-spacing: 0%;
+
+                &::placeholder {
+                    color: $bg-gray;
+
+
+                }
+            }
+
+            button {
+                height: 100%;
+                width: 111px;
+                border: none;
+                width: 111;
+                border-radius: 8px;
+                background-color: $bg-green;
+                cursor: pointer;
+                font-family: $font-bold;
+                font-weight: 700;
+                font-style: Bold;
+                font-size: 15px;
+                line-height: 100%;
+                letter-spacing: 0%;
+
+            }
+        }
+    }
+
+    .area_perguntas_frequentes {
+        display: flex;
+        padding: 30px 60px;
+        column-gap: 100px;
+        align-items: flex-start;
+
+        .area_perguntas_frequentes_left {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+
+            span {
+                font-family: $font-bold;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                color: #fff;
+                cursor: pointer;
+            }
+        }
+
+        .area_perguntas_frequentes_right {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            flex-grow: 1;
+
+            h1 {
+                font-family: $font-bold;
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                color: $bg-gray;
+
+            }
+
+            .perguntas_frequentes {
+                padding: 0px 20px;
+                display: flex;
+                flex-direction: column;
+
+                .pergunta {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 10px;
+                    align-items: center;
+                    height: 48px;
+                    border-radius: 8px;
+                    cursor: pointer;
+
+                    span {
+                        font-family: $font-bold;
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: 100%;
+                        letter-spacing: 0%;
+                        color: #fff;
+
+                    }
+
+                    svg {
+                        font-size: 21px;
+                        color: $bg-gray;
+                    }
+
+                    &:nth-child(even) {
+                        background-color: $bg-dark-secondary;
+                    }
+                }
+            }
+        }
+    }
+}

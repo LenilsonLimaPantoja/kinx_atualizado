@@ -1,0 +1,165 @@
+@import '../../../../../styles/global.scss';
+
+.area_darkrooms_populares {
+    .darkrooms_populares_area_titulo {
+        width: 100%;
+
+        h2 {
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 42px;
+            letter-spacing: 0%;
+            color: $bg-gray-b;
+            padding-left: 47px;
+        }
+    }
+
+    .darkrooms_populares_area_card {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+
+        .darkrooms_populares_card {
+            background-color: $bg-dark-secondary;
+            width: 382px;
+            flex-grow: 1;
+            height: 141px;
+            border-radius: 15px;
+            padding: 10px;
+            padding-left: 15px;
+            display: flex;
+            gap: 10px;
+            cursor: pointer;
+            position: relative;
+            border: solid 1px transparent;
+            transition: .5s ease-in-out;
+            max-width: 700px;
+
+            &:hover {
+                border-color: $bg-green;
+            }
+
+            .btn_flutuante {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                border: none;
+                left: -5px;
+                top: -5px;
+                background: linear-gradient(162.46deg, #FF0900 12.01%, #E0B711 94.46%);
+
+                img {
+                    width: 13px;
+                    height: 15px;
+
+                }
+            }
+
+            .darkrooms_populares_area_img {
+                padding: 10px 0px;
+
+                img {
+                    width: 49px;
+                    height: 49px;
+                    border-radius: 50%;
+
+                }
+            }
+
+            .darkrooms_populares_card_body {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 10px 0px;
+                flex-grow: 1;
+
+                .darkrooms_populares_card_body_topo {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    .darkrooms_populares_card_body_topo_titulo {
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 100%;
+                        letter-spacing: 0%;
+                        color: $bg-gray-b;
+
+                    }
+
+                    .darkrooms_populares_card_body_topo_paragrafo {
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 100%;
+                        letter-spacing: 0%;
+                        color: $bg-gray;
+
+                    }
+                }
+
+                .darkrooms_populares_card_body_bottom {
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 10px;
+
+                    .darkrooms_populares_card_body_bottom_item {
+                        color: $bg-gray;
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+
+                        .area_icone {
+                            position: relative;
+
+                            svg {
+                                font-size: 12px;
+                            }
+
+                            .icone_ponto {
+                                position: absolute;
+                                right: -3px;
+                                bottom: 0px;
+                                font-size: 10px;
+                                color: $bg-green;
+                            }
+                        }
+
+                        span {
+                            font-weight: 400;
+                            font-size: 10px;
+                            line-height: 100%;
+                            letter-spacing: 0%;
+
+                        }
+                    }
+                }
+            }
+
+            .darkrooms_populares_card_area_sair {
+                button {
+                    width: 22px;
+                    height: 22px;
+                    border-radius: 50%;
+                    border: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $bg-green;
+                    cursor: pointer;
+
+                    img {
+                        width: 10px;
+                        height: 9px;
+
+                    }
+                }
+            }
+        }
+    }
+}

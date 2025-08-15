@@ -1,0 +1,233 @@
+@import '../../../../styles/global.scss';
+
+.darkrooms_feed_eventos {
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 717px;
+
+    @media (max-width: 950px) {
+        max-width: 100%;
+    }
+
+    .card_agora {
+        background-color: $bg-dark-secondary;
+        padding: 20px 30px;
+        gap: 30px;
+        height: 625;
+        border-radius: 15px;
+        transition: .5s ease-in-out;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        border: solid 1px transparent;
+
+        &:hover {
+            border-color: $bg-green;
+        }
+
+        .card_agora_topo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .card_agora_topo_left {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                img {
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 50%;
+                }
+
+                strong {
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    color: $bg-gray-b;
+
+                }
+
+                svg {
+                    color: $bg-gray-b;
+                    font-size: 10px;
+                }
+
+                span {
+                    font-weight: 400;
+                    font-size: 10px;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    color: $bg-gray;
+                }
+            }
+
+            .card_agora_topo_right {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                .qtd_disponivel_evento {
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    color: $bg-gray;
+                }
+
+                button {
+                    border: none;
+                    background-color: $bg-green;
+                    cursor: pointer;
+                    height: 25px;
+                    border-radius: 12.5px;
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    padding: 0px 1.5px 0px 10px;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    .inscritos {
+                        background-color: $bg-green-secondary;
+                        width: 22px;
+                        height: 22px;
+                        border-radius: 50%;
+                        font-size: 10px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+
+        .data_hora_evento {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            color: $bg-gray;
+
+            .texto_data_hora {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 100%;
+                letter-spacing: 0%;
+            }
+
+            strong {
+                font-weight: 700;
+                font-style: Bold;
+                font-size: 20px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                color: #fff;
+
+                span {
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    color: $bg-gray;
+                }
+            }
+        }
+
+        .area_texto_evento {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+
+            strong {
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 16px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                color: #fff;
+            }
+
+            .card_agora_paragrafo {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                color: $bg-gray;
+
+                .ver_mais {
+                    color: #fff;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .card_agora_tags {
+            display: flex;
+            gap: 10px;
+
+            span {
+                background-color: $bg-green;
+                padding: 0px 10px;
+                height: 15px;
+                border-radius: 8px;
+                font-weight: 700;
+                font-size: 8px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        .card_agora_img_area {
+            background-image: url('../../../../arquivos/locais/locais1.png');
+            width: 100%;
+            height: 317px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top;
+            object-fit: fill;
+            border-radius: 10px;
+        }
+
+        .card_agora_bottom {
+            display: flex;
+            justify-content: space-between;
+
+            .card_agora_bottom_left {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                .card_agora_bottom_left_curtida_coment {
+                    color: $bg-gray;
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+
+                    svg {}
+
+                    span {
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 100%;
+                        letter-spacing: 0%;
+                    }
+                }
+            }
+
+            .card_agora_bottom_icone_menu {
+                color: $bg-gray;
+            }
+        }
+    }
+}

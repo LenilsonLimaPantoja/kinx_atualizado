@@ -1,0 +1,45 @@
+@import '../../../../styles/global.scss';
+
+.container_darkroom_feed {
+    background-color: $bg-dark-primary;
+
+    .darkrooms_populares_area {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .darkrooms_populares {
+            padding: 36px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            width: 100%;
+            max-width: 1333px;
+            flex-wrap: wrap;       
+
+            .darkrooms_populares_area_agora {
+                display: flex;
+                width: 100%;
+                gap: 20px;
+
+                
+
+                @media (max-width: 950px) {
+                    flex-direction: column;
+
+                    .darkrooms_populares_agora {
+                        max-width: 100%;
+                    }
+                }
+
+
+                
+            }
+            @media (max-width: 800px) {
+                    padding: 36px 20px;
+                }
+        }
+
+    }
+}

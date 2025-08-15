@@ -1,0 +1,64 @@
+@import '../../../../../styles/global.scss';
+
+.container_finalizar_cadastro {
+    padding: 20px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex-grow: 1;
+
+    @media (max-width: 850px) {
+        padding: 20px;
+    }
+
+    h1 {
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 61px;
+        letter-spacing: 0%;
+        max-width: 574px;
+        font-family: $font-bold;
+        color: #fff;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: $bg-gray;
+        max-width: 629px;
+    }
+
+    .checkboxes {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        margin-top: 50px;
+
+        .checkbox {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            svg {
+                font-size: 20px;
+                color: $bg-gray;
+            }
+
+            &:nth-child(1) {
+                svg {
+                    color: $bg-green;
+                }
+            }
+
+            span {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                color: $bg-gray;
+            }
+        }
+    }
+}

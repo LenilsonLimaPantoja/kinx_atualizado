@@ -1,0 +1,42 @@
+@import '../../../../../styles/global.scss';
+
+.container_cadastrar_usuario {
+    padding: 20px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex-grow: 1;
+
+    @media (max-width: 850px) {
+        padding: 20px;
+    }
+
+    h1 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #fff;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: $bg-gray;
+        max-width: 852px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+
+        .inputs_grupo {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+    }
+}

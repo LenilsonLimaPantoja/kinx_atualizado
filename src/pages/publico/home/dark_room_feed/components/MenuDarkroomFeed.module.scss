@@ -1,0 +1,135 @@
+@import '../../../../../styles/global.scss';
+
+.container_menu_feed__darkroom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    .container_menu_feed__darkroom_left {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        button {
+            width: 161px;
+            height: 52px;
+            border-radius: 8px;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 10px;
+            cursor: pointer;
+            background-color: transparent;
+            color: $bg-gray;
+            border: solid 1px $bg-dark;
+            transition: .5s ease-in-out;
+
+            svg {
+                color: $bg-gray;
+                transition: .5s ease-in-out;
+            }
+
+            span {
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                transition: .5s ease-in-out;
+
+            }
+
+            &:hover {
+                border-color: $bg-green;
+
+                span,
+                svg {
+                    color: $bg-green;
+                }
+            }
+        }
+
+        .menu_seleciona {
+            background-color: $bg-green;
+            color: $bg-dark;
+            border-color: transparent;
+
+
+            svg {
+                color: $bg-dark;
+                font-size: 30px;
+            }
+
+            &:hover {
+                border-color: transparent;
+
+                span,
+                svg {
+                    color: $bg-dark;
+                }
+            }
+        }
+    }
+
+    .area_btn_menu_feed_principal_right {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .btn_menu_feed_principal_right {
+            width: 65px;
+            height: 52px;
+            border-radius: 8px;
+            border: none;
+            background-color: $bg-green;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            position: relative;
+
+            &:nth-child(1) {
+                width: auto;
+                padding: 0px 20px;
+            }
+
+            svg {
+                font-size: 30px;
+            }
+
+            img {
+                width: 24px;
+                height: 27px;
+            }
+
+            .novo_post {
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 100%;
+                letter-spacing: 0%;
+
+            }
+
+            .qtd_mensagens {
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background-color: $bg-red-primary;
+                font-weight: 700;
+                font-size: 10px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                color: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}

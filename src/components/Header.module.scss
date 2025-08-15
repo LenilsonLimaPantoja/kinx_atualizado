@@ -1,0 +1,189 @@
+@import '../styles/global.scss';
+
+.header {
+    background-color: $bg-dark-secondary;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+    column-gap: 60px;
+    border-radius: 15px;
+    height: 70px;
+    width: 100%;
+    flex-grow: 1;
+
+    .logo {
+        width: 77px;
+        height: 22px;
+        cursor: pointer;
+    }
+
+    ul {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+
+
+
+        li {
+            cursor: pointer;
+            color: $bg-gray;
+            list-style: none;
+            font-weight: 700;
+            font-style: Bold;
+            font-size: 14px;
+            line-height: 100%;
+            letter-spacing: 0%;
+        }
+
+        .li_selected {
+
+            color: #fff;
+            font-weight: 700;
+        }
+    }
+
+    .header_logado {
+        display: flex;
+        gap: 30px;
+
+        .area_img_user {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            cursor: pointer;
+
+            .area_img_perfil {
+                background-image: linear-gradient(180deg, #DD00FF 0%, #3B42D0 100%);
+                padding: 2px;
+                border-radius: 50%;
+                width: 41px;
+                height: 41px;
+
+                img {
+                    border-radius: 50%;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .area_img_user_texto {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                strong {
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    color: $bg-gray-b;
+                }
+
+                span {
+                    font-weight: 400;
+                    font-size: 10px;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    color: $bg-gray;
+                }
+            }
+        }
+
+        .area_icones_user {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+
+            svg {
+                color: $bg-gray;
+                cursor: pointer;
+            }
+
+            .notificacoes_number {
+                width: 22px;
+                height: 22px;
+                border-radius: 50%;
+                border: none;
+                font-weight: 700;
+                font-size: 10px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                background-color: $bg-green;
+                cursor: pointer;
+            }
+
+            .menu_btn {
+                width: 22px;
+                height: 22px;
+                border: solid 2px $bg-gray;
+                border-radius: 50%;
+                background-color: transparent;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+
+                svg {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    .header_deslogado {
+        display: flex;
+        column-gap: 40px;
+
+        .button {
+            background-color: transparent;
+            border: none;
+            color: #fff;
+            border-radius: 8px;
+            min-width: 90px;
+            height: 35px;
+            cursor: pointer;
+            font-weight: 700;
+            font-style: Bold;
+            font-size: 14px;
+            line-height: 100%;
+            letter-spacing: 0%;
+
+            &:nth-child(2) {
+                background-color: $bg-green;
+                color: #000;
+                font-size: 15px;
+            }
+        }
+
+        .btn_menu {
+            background-color: transparent;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: none;
+
+            svg {
+                font-size: 35px;
+            }
+        }
+    }
+
+    @media (max-width: 930px) {
+        ul {
+            display: none;
+        }
+
+        div {
+            .button {
+                display: none;
+            }
+
+            .btn_menu {
+                display: flex;
+            }
+        }
+    }
+}

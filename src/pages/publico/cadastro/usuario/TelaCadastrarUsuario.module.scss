@@ -1,0 +1,91 @@
+@import '../../../../styles/global.scss';
+
+.area_container_tela_cadastrar_usuario {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 20px;
+
+    .container_tela_cadastrar_usuario {
+        width: 100%;
+        background-color: $bg-dark-secondary;
+        border-radius: 15px;
+        overflow: hidden;
+
+        .area_tela_cadastrar_usuario {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            min-height: 653px;
+
+            .voltar {
+
+                svg {
+                    color: #fff;
+                    font-size: 30px;
+                    cursor: pointer;
+                }
+            }
+
+            .botoes {
+                display: flex;
+                justify-content: flex-end;
+
+                .botao_avançar {
+                    width: 157px;
+                    height: 38px;
+                    border-radius: 42px;
+                    background-color: $bg-green;
+                    border: none;
+                    color: $bg-dark;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    padding: 10px;
+                    cursor: pointer;
+
+                    svg {
+                        font-size: 25px;
+                    }
+
+                    span {
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 100%;
+                        letter-spacing: 0%;
+                    }
+                }
+            }
+        }
+
+        .barra_carregamento {
+            background-color: $bg-gray-secondary;
+            width: 100%;
+            height: 8px;
+
+            .progresso {
+                background-color: $bg-green;
+                height: 8px;
+                transition: 1s ease-in-out;
+            }
+        }
+    }
+
+    .container_finalizado {
+        background-color: $bg-green;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+
+        img {
+            width: 136px;
+            height: 139;
+        }
+    }
+}

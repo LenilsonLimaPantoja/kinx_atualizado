@@ -1,0 +1,76 @@
+@import '../../../../../styles/global.scss';
+
+.container_menu_feed_principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    .container_menu_feed_principal_left {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        button {
+            width: 161px;
+            height: 52px;
+            border-radius: 8px;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 10px;
+            cursor: pointer;
+            background-color: transparent;
+            color: $bg-gray;
+            border: solid 1px $bg-dark;
+            transition: .5s;
+
+            &:hover {
+                border-color: $bg-gray;
+            }
+
+            svg {
+                color: $bg-gray;
+            }
+
+            span {
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 100%;
+                letter-spacing: 0%;
+
+            }
+        }
+
+        .menu_seleciona {
+            background-color: $bg-green;
+            color: $bg-dark;
+            border-color: transparent;
+
+            &:hover {
+                border-color: transparent;
+            }
+
+            svg {
+                color: $bg-dark;
+                font-size: 30px;
+            }
+        }
+    }
+
+    .btn_menu_feed_principal_right {
+        width: 65px;
+        height: 52px;
+        border-radius: 8px;
+        border: none;
+        background-color: $bg-green;
+        cursor: pointer;
+
+        img {
+            width: 24px;
+            height: 27px;
+        }
+    }
+}

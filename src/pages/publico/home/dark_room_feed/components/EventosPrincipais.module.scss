@@ -1,0 +1,153 @@
+@import '../../../../../styles/global.scss';
+
+.container_eventos_principais {
+    h2 {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 42px;
+        letter-spacing: 0%;
+        color: $bg-gray-b;
+    }
+
+    .area_eventos_principais {
+        display: flex;
+        gap: 10px;
+
+        .evento_principal {
+            background-color: $bg-dark-secondary;
+            flex-grow: 1;
+            min-width: 363px;
+            height: 141px;
+            border-radius: 15px;
+            display: flex;
+            padding: 10px;
+            gap: 20px;
+            border: solid 1px transparent;
+            cursor: pointer;
+            transition: .5s;
+
+            &:hover {
+                border-color: $bg-green;
+            }
+
+            .eventos_principais_left {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 20px;
+                padding-left: 20px;
+
+                .eventos_principais_left_topo {
+                    display: flex;
+                    flex-direction: column;
+                    color: #fff;
+                    gap: 3px;
+                    text-align: center;
+
+                    strong {
+                        line-height: 100%;
+                        letter-spacing: 0%;
+
+                        &:nth-child(1) {
+                            font-weight: 700;
+                            font-size: 24px;
+
+                        }
+
+                        &:nth-child(2) {
+                            font-weight: 700;
+                            font-size: 15px;
+                        }
+
+                        &:nth-child(3) {
+                            font-weight: 400;
+                            color: $bg-gray;
+                            font-size: 24px;
+                        }
+                    }
+                }
+
+                .hora {
+                    font-weight: 400;
+                    font-size: 10px;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    color: $bg-gray;
+                }
+            }
+
+            .eventos_principais_body {
+                color: $bg-gray;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+
+                strong {
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+
+                }
+
+                p {
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+
+                }
+
+                .eventos_principais_body_bottom {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+
+                    svg {
+                        font-size: 12px;
+                    }
+
+                    span {
+                        font-weight: 400;
+                        font-size: 10px;
+                        line-height: 100%;
+                        letter-spacing: 0%;
+                    }
+                }
+            }
+
+            .eventos_principais_right {
+                display: flex;
+                gap: 5px;
+                align-items: flex-start;
+                justify-content: flex-end;
+
+                .btn_lock {
+                    border-radius: 0px;
+                    background-color: transparent;
+
+                    img {
+                        width: 14px;
+                        height: 14px;
+                    }
+                }
+
+                button {
+                    width: 22px;
+                    height: 22px;
+                    border-radius: 50%;
+                    background-color: $bg-green;
+                    border: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        width: 10px;
+                        height: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

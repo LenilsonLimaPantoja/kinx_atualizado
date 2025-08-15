@@ -1,0 +1,107 @@
+@import '../../../../styles/global.scss';
+
+.home_area_postagens {
+    min-width: 422px;
+
+    .home_postagens {
+        background-color: $bg-dark-secondary;
+        border-radius: 15px;
+
+        .home_postagens_area_top {
+            padding: 36px;
+
+            span {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                color: $bg-gray;
+
+            }
+        }
+
+        .home_postagens_linha_dividir {
+            height: 1px;
+            width: 100%;
+            background-color: $bg-dark;
+        }
+
+        .home_postagens_card {
+            padding: 36px;
+            display: flex;
+            column-gap: 20px;
+            cursor: pointer;
+
+            .home_postagens_card_body {
+                display: flex;
+                flex-direction: column;
+                row-gap: 10px;
+                flex-grow: 1;
+
+                .home_postagens_card_body_top {
+                    display: flex;
+                    align-items: center;
+                    column-gap: 10px;
+
+                    img {
+                        width: 21px;
+                        height: 21px;
+                        border-radius: 50%;
+
+                    }
+
+                    strong {
+                        font-weight: 700;
+                        font-size: 10px;
+                        line-height: 42px;
+                        letter-spacing: 0%;
+                        color: $bg-gray-b;
+                    }
+
+                    svg {
+                        color: $bg-gray-b;
+                        font-size: 10px;
+                    }
+
+                    span {
+                        font-weight: 400;
+                        font-size: 10px;
+                        line-height: 100%;
+                        letter-spacing: 0%;
+                        color: $bg-gray;
+
+                    }
+                }
+
+                p {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    color: $bg-gray;
+                }
+
+                .home_postagens_card_body_bottom {
+                    display: flex;
+                    gap: 20px;
+
+                    span {
+                        font-weight: 400;
+                        font-size: 10px;
+                        line-height: 100%;
+                        letter-spacing: 0%;
+                        color: $bg-gray;
+                    }
+                }
+
+            }
+
+            .home_postagens_card_img_right {
+                width: 136px;
+                height: 112px;
+                border-radius: 8px;
+
+            }
+        }
+    }
+}

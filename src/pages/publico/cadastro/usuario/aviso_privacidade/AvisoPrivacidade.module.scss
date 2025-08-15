@@ -1,0 +1,112 @@
+@import '../../../../../styles/global.scss';
+
+.container_aviso_privacidade {
+    padding: 20px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex-grow: 1;
+
+    @media (max-width: 850px) {
+        padding: 20px;
+    }
+    h1 {
+        font-family: $font-bold;
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 64px;
+        line-height: 61px;
+        letter-spacing: 0%;
+        max-width: 500px;
+        color: #fff;
+
+        span {
+            color: $bg-green;
+            font-family: $font-bold;
+        }
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0%;
+        max-width: 593px;
+        color: $bg-gray;
+
+    }
+
+    .formulario {
+        display: flex;
+        gap: 20px;
+
+        select {
+            background-color: $bg-dark;
+            border: none;
+            outline: none;
+            padding: 10px;
+            width: 117px;
+            height: 40px;
+            border-radius: 10px;
+            color: $bg-gray;
+
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-image: none;
+
+            option {}
+        }
+    }
+
+    .checkbox {
+        display: flex;
+        align-items: center;
+        color: $bg-gray;
+        gap: 10px;
+
+        svg {
+            font-size: 20px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        span {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0%;
+
+        }
+    }
+}
+
+.botoes {
+    display: flex;
+    justify-content: flex-end;
+
+    .botao_avançar {
+        width: 157px;
+        height: 38px;
+        border-radius: 42px;
+        background-color: $bg-green;
+        border: none;
+        color: $bg-dark;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+        cursor: pointer;
+
+        svg {
+            font-size: 25px;
+        }
+
+        span {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0%;
+        }
+    }
+}
