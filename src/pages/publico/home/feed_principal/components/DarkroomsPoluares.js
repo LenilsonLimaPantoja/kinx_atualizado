@@ -1,11 +1,11 @@
 import styles from './DarkroomsPoluares.module.scss';
 import straight from '../../../../../arquivos/straight/straight.png';
-
 import { LuUsers } from "react-icons/lu";
 import { LuBookmark, LuUserRound } from "react-icons/lu";
 import { TbPointFilled } from "react-icons/tb";
 import fire from '../../../../../arquivos/icones/fire.png';
 import logout from '../../../../../arquivos/icones/logout.png';
+
 const DarkroomsPoluares = () => {
     return (
         <div className={styles.area_darkrooms_populares}>
@@ -59,4 +59,5 @@ const DarkroomsPoluares = () => {
         </div>
     )
 }
+
 export default DarkroomsPoluares;

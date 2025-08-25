@@ -2,6 +2,7 @@
 
 .container_inserir_local {
     width: 570px;
+    height: 100vh;
 
     .topo {
         background-color: $bg-dark-secondary;
@@ -79,6 +80,8 @@
             display: flex;
             flex-direction: column;
             row-gap: 10px;
+            justify-content: center;
+            align-items: center;
 
             label {
                 background-color: $bg-dark-secondary;
@@ -100,11 +103,120 @@
                     background-color: transparent;
                     border: none;
                     outline: none;
+                    color: $bg-gray;
                 }
 
                 svg {
                     color: $bg-red;
                     font-size: 22px;
+                }
+            }
+
+            .inpuGroup {
+                display: flex;
+                gap: 10px;
+                width: 100%;
+
+                label {
+                    border: none;
+                    padding: 0 10px;
+                    flex-grow: 1;
+                    display: flex;
+
+                    span {
+                        font-weight: 400px;
+                        font-size: 12px;
+                        line-height: 100%;
+                        letter-spacing: 0%;
+                        color: $bg-gray;
+                        flex-grow: 1;
+                    }
+
+                    select {
+                        background-color: $bg-dark-secondary;
+                        border: none;
+                        outline: none;
+                        color: #fff;
+                        font-weight: 500px;
+                        font-style: Medium;
+                        font-size: 12px;
+                        line-height: 100%;
+                        letter-spacing: 0%;
+
+                    }
+                }
+            }
+
+            textarea {
+                background-color: $bg-dark-secondary;
+                border: none;
+                min-height: 161px;
+                padding: 10px;
+                border-radius: 8px;
+                color: $bg-gray;
+                outline: none;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                width: 100%;
+            }
+
+            .btnLocalIMg {
+                background-color: $bg-dark-secondary;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+                border: dashed 2px $bg-gray;
+                color: $bg-gray;
+                border-radius: 8px;
+                min-height: 183px;
+                cursor: pointer;
+                gap: 10px;
+                width: 100%;
+
+                svg {
+                    font-size: 34px;
+                }
+
+                span {
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    text-align: center;
+                    max-width: 168px;
+                }
+            }
+
+            .btn_publicar {
+                width: 164px;
+                height: 44px;
+                border-radius: 8px;
+                border: none;
+                background-color: $bg-green;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                cursor: pointer;
+                transition: .5s ease-in-out;
+
+                &:hover {
+                    opacity: .5;
+                }
+
+                svg {
+                    font-size: 18px;
+                }
+
+                span {
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 100%;
+                    letter-spacing: 0%;
                 }
             }
         }
